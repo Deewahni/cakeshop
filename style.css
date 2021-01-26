@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Pattaya&family=Seaweed+Script&display=swap');
+
+
+:root {
+    --max-width: 1100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Bodoni Moda', serif;
+    line-height: 1.5;
+    /* font-family: 'Montserrat', sans-serif;
+
+ */
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* Utilities */
+.container {
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+.l-heading {
+    font-family: 'Pattaya', sans-serif;
+    font-size: 5rem;
+    line-height: 1;
+}
+
+.lead {
+    font-family: 'Seaweed Script', cursive;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Navbar */
+#showcase {
+    background: cadetblue;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+#navbar {
+    display: grid;
+    grid-template-columns: 6fr 3fr 2fr;
+    padding: 20px;
+}
+
+#navbar .logo {
+    width: 30px;
+}
+
+#navbar .logo img {
+    filter: invert(0);
+}
+
+#navbar ul {
+    display: flex;
+}
+
+.items li,
+.utilities li{
+    padding: 0.5rem 0.8rem;
+    margin-right: 5px;
+}
+
+.utilities {
+    justify-content: flex-end;
+}
+
+.showcase-content {
+    margin-top: 50px;
+    text-align: center;
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
